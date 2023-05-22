@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="form.css">
+</head>
+<body>
+    <nav>
+        <p id="logo">&lt;/&gt; DevClub</p>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="register.html">Register</a></li>
+            <li><a href="login.html">Login</a></li>
+        </ul>
+    </nav>
+    <div class="form-container">
+        <div class="form">
+            <form action="#" onsubmit="registerValidation(event)">
+                <h3>Full Name:</h3>
+                <input type="text" id="r_name">
+                <p class="error" id="ename"></p>
+
+                <h3>Email:</h3>
+                <input type="text" id="r_email">
+                <p class="error" id="eemail"></p>
+
+                <h3>Mobile:</h3>
+                <input type="text" id="r_mobile">
+                <p class="error" id="emobile"></p>
+
+                <h3>Password:</h3>
+                <input type="text" id="r_pass"><br>
+                <p class="error" id="epass"></p>
+                
+                <h3>Confirm Password:</h3>
+                <input type="text" id="r_con_pass"><br>
+                <p class="error" id="e_con_pass"></p>
+
+
+                <button>Register</button>
+            </form>
+        </div>
+    </div>
+
+    <script src="register.js"></script>
+</body>
+</html>
